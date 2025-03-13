@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="month-of-the-year.css">
+</head>
+<body>
+    <div class="a-box">
+        <h1>NUMBER OF DAYS IN A MONTH</h1>
+        <h2>Instruction:</h2>
+        <h3>In the text below, type in <span>any month of the year</span> to found out how many <span>days</span> are in that month.</h3>
+        <input id="monthHere" type="text"> <button onclick="appear()"> Click here to confirm</button>
+
+        <div id="numberHere" class="output-box">
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    // let theInput = document.getElementById('inputHere')
+    // let div = document.getElementById('outputHere')
+    // console.log(theInput);
+    
+    
+    // function appear() {
+    //     let newValue = theInput.value.toLowerCase()
+    //     let censoredText = newValue.replaceAll('a', '*').replaceAll('b', '*').replaceAll('c', '*').replaceAll('d', '*').replaceAll('e', '*').replaceAll('f', '*').replaceAll('g', '*').replaceAll('h', '*').replaceAll('i', '*').replaceAll('j', '*').replaceAll('k', '*').replaceAll('l', '*').replaceAll('m', '*').replaceAll('n', '*').replaceAll('o', '*').replaceAll('p', '*').replaceAll('q', '*').replaceAll('r', '*').replaceAll('s', '*').replaceAll('t', '*').replaceAll('u', '*').replaceAll('v', '*').replaceAll('w', '*').replaceAll('x', '*').replaceAll('y', '*').replaceAll('z', '*').replaceAll(' ', '*').replaceAll('1', '*').replaceAll('2', '*').replaceAll('3', '*').replaceAll('4', '*').replaceAll('5', '*').replaceAll('6', '*').replaceAll('7', '*').replaceAll('8', '*').replaceAll('9', '*').replaceAll('0', '*').replaceAll('!', '*').replaceAll('@', '*').replaceAll('#', '*').replaceAll('$', '*').replaceAll('%', '*').replaceAll('^', '*').replaceAll('&', '*').replaceAll('*', '*').replaceAll('(', '*').replaceAll(')', '*').replaceAll('_', '*').replaceAll('-', '*').replaceAll('+', '*').replaceAll('=', '*').replaceAll('{', '*').replaceAll('}', '*').replaceAll('[', '*').replaceAll(']', '*').replaceAll('|', '*').replaceAll('\\', '*').replaceAll(';', '*').replaceAll(':', '*').replaceAll('"', '*').replaceAll("'", '*').replaceAll('<', '*').replaceAll('>', '*').replaceAll(',', '*').replaceAll('.', '*').replaceAll('/', '*').replaceAll('?', '*').replaceAll('`', '*').replaceAll('~', '*')
+    //     let secondValue = censoredText.repeat(censoredText.length)
+    //     div.innerText = secondValue
+    // }
+
+    let month = document.getElementById('monthHere');
+    let numberHere = document.getElementById('numberHere');
+    console.log(month);
+    
+    
+    
+    function appear() {
+        let firstValue = month.value.toLowerCase()
+        let secondValue = firstValue.replaceAll('january', 'January has 31 days').replaceAll('february', 'February has 28 days in a common year and 29 days in leap years').replaceAll('march', 'March has 31 days').replaceAll('april', 'April has 30 days').replaceAll('may', 'May has 31 days').replaceAll('june', 'June has 30 days').replaceAll('july', 'July has 31 days').replaceAll('august', 'August has 31 days').replaceAll('september', 'September has 30 days').replaceAll('october', 'October has 31 days').replaceAll('november', 'November has 31 days').replaceAll('december', 'December has 30 days')
+        numberHere.innerHTML = secondValue
+    }
+
+
+</script>

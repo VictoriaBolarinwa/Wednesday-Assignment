@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="the-box">
+        <h1>THIS INPUT BOX</h1>
+        <h2>DOES SOMETHING DIFFERENT</h2>
+        <h5>Every character is meant to be multplied by its length</h5>
+        <h5>You don't get to see what you've typed in. It just changes into asterisks</h5>
+        <input id="inputHere" type="text"> <button onclick="appear()"> Test here to see</button>
+
+        <div id="outputHere" class="output-box">
+
+    </div>
+    </div>
+</body>
+</html>
+<script>
+
+    // Exercise 1a
+    let sentence = 'Love is the best thing in this world. Some found their love and some are still looking for their love' 
+    // sentence = sentence.toLowerCase
+    console.log(sentence.indexOf('Love'));
+    console.log(sentence.indexOf('love'));
+    console.log(sentence.lastIndexOf('love'));
+
+    // Exercise 1b
+        // can't seem to figure this out yet
+
+
+
+
+
+    // Exercise 2
+
+    let theInput = document.getElementById('inputHere')
+    let outputHere = document.getElementById('outputHere')
+    console.log(theInput);
+    
+    
+    function appear() {
+        let newValue = theInput.value.toLowerCase()
+        let censoredText = newValue.replaceAll('a', '*').replaceAll('b', '*').replaceAll('c', '*').replaceAll('d', '*').replaceAll('e', '*').replaceAll('f', '*').replaceAll('g', '*').replaceAll('h', '*').replaceAll('i', '*').replaceAll('j', '*').replaceAll('k', '*').replaceAll('l', '*').replaceAll('m', '*').replaceAll('n', '*').replaceAll('o', '*').replaceAll('p', '*').replaceAll('q', '*').replaceAll('r', '*').replaceAll('s', '*').replaceAll('t', '*').replaceAll('u', '*').replaceAll('v', '*').replaceAll('w', '*').replaceAll('x', '*').replaceAll('y', '*').replaceAll('z', '*').replaceAll(' ', '*').replaceAll('1', '*').replaceAll('2', '*').replaceAll('3', '*').replaceAll('4', '*').replaceAll('5', '*').replaceAll('6', '*').replaceAll('7', '*').replaceAll('8', '*').replaceAll('9', '*').replaceAll('0', '*').replaceAll('!', '*').replaceAll('@', '*').replaceAll('#', '*').replaceAll('$', '*').replaceAll('%', '*').replaceAll('^', '*').replaceAll('&', '*').replaceAll('*', '*').replaceAll('(', '*').replaceAll(')', '*').replaceAll('_', '*').replaceAll('-', '*').replaceAll('+', '*').replaceAll('=', '*').replaceAll('{', '*').replaceAll('}', '*').replaceAll('[', '*').replaceAll(']', '*').replaceAll('|', '*').replaceAll('\\', '*').replaceAll(';', '*').replaceAll(':', '*').replaceAll('"', '*').replaceAll("'", '*').replaceAll('<', '*').replaceAll('>', '*').replaceAll(',', '*').replaceAll('.', '*').replaceAll('/', '*').replaceAll('?', '*').replaceAll('`', '*').replaceAll('~', '*')
+        let secondValue = censoredText.repeat(censoredText.length)
+        outputHere.innerText = secondValue
+    }
+        
+
+</script>

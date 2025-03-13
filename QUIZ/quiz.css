@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.output-box{
+    background-image: linear-gradient(to bottom right, #fbd07c, #6330b4);
+    /* width: 1650px; */
+    height: 180px;
+    border-radius: 20px;
+}
+.the-box{
+    background-image: linear-gradient(to bottom right, #fbd07c, #f7f779);
+    width: 550px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 15px;
+    text-align: center;
+    font-size: 23px;
+    border-radius: 20px;
+}
